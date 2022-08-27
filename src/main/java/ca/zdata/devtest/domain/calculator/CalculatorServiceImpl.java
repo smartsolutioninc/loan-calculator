@@ -7,8 +7,11 @@ public class CalculatorServiceImpl implements CalculatorService {
 
 	@Override
 	public InstallmentTable calculate() {
-		// TODO Auto-generated method stub
-		return null;
+		InstallmentTable table = new InstallmentTable();
+		
+		table.setDummyAmount(12345L);
+		
+		return table;
 	}
 
 }
