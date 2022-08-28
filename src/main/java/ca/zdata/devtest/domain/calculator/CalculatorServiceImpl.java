@@ -6,8 +6,10 @@ import org.springframework.stereotype.Service;
 public class CalculatorServiceImpl implements CalculatorService {
 
 	@Override
-	public InstallmentTable calculate() {
-		InstallmentTable table = new InstallmentTable();
+	public AmortizationTable calculate() {
+		AmortizationTable table = new AmortizationTable();
+		
+		//TODO: Implement Rule of 78 calculation here
 		
 		table.setDummyAmount(12345L);
 		

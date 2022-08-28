@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>ca.zdata</groupId>
-	<artifactId>devtest</artifactId>
+	<artifactId>loan-calc</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>devtest</name>
+	<name>loan-calc</name>
 	<description>Test Assignment Project for a developer</description>
 	<properties>
 		<java.version>11</java.version>
