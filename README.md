@@ -1,12 +1,12 @@
-# Instalment Amounts Calculation (test assignment)
+# Loan Calculator (test assignment)
 
 As part of a test assignment we would like you to fork this project and 
 enhance it based on the requirements below. Once the assignment is completed,
 push your changes to GitHub and send us a pull request. We will review it and
 will arrange another interview to go over your code changes.
 
-1. Implement the Loan Instalment Calculation on the backend and provide a
-   RESTful end-point that returns the result to the front-end. The suggested 
+1. Implement the Rule of 78 algorithm on the backend and provide a RESTful 
+   end-point that returns the result to the front-end. The suggested 
    location of the endpoint is in the CalculatorController class that might
    also delegate the calculation to the service, but feel free to re-arrange
    the structure of the backend classes the way you feel makes more sense.
@@ -28,12 +28,13 @@ will arrange another interview to go over your code changes.
 
 Please make sure your coding style is consistent and mimics the style of 
 the existing code. Both front-end and back-end code should be easy to read
-by other developers, while the UI layout and data presentation is user-friendly. 
+by other developers, while the UI layout and data presentation is user-friendly.
+Any improvements to the project are welcome. 
 
 To build the project, run:
 
 1. `mvn package`
-2. `target/devtest-0.0.1-SNAPSHOT.jar`
+2. `java -jar target/loan-calc-0.0.1-SNAPSHOT.jar`
 3. Go to http://localhost:8080 in the browser
 
 
