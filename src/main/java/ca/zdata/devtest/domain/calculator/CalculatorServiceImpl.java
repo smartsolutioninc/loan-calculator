@@ -11,7 +11,7 @@ public class CalculatorServiceImpl implements CalculatorService {
 		
 		//TODO: Implement Rule of 78 calculation here
 		
-		table.setDummyAmount(12345L);
+		table.generateAmortizationTable(48, 10000.00, 1.0);
 		
 		return table;
 	}
