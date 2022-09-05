@@ -30,7 +30,7 @@ public class AmortizationTable {
 			balance = newBalance;
 			interest = make2Decimals((totalInterest*currentPayment)/interestProportion);
 			principal = make2Decimals(totalAmoutPerPayment-interest);
-			newBalance = make2Decimals(newBalance-interest-principal);
+			newBalance = make2Decimals(newBalance-principal);
 			if (newBalance<0)
 			{
 				newBalance = 0;
@@ -101,7 +101,7 @@ public class AmortizationTable {
 		public String toString()
 		{
 			//could use a StringBuilder here
-			return  paymentNumber+" "+balance+" "+interest+" "+principal+" "+newBalance;
+			return  paymentNumber+" "+(interest+principal)+" "+balance+" "+interest+" "+principal+" "+newBalance;
 		}
 	
 	}
