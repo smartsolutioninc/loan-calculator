@@ -59,12 +59,14 @@ public class AmortizationTable {
 			this.balance=balance;
 			this.interest=interest;
 			this.principal=principal;
+			this.payment = principal+interest;
 			this.newBalance=newBalance;
 		}
 		int paymentNumber;
 		double balance;
 		double interest;
 		double principal;
+		double payment;
 		double newBalance;
 		
 		public int getPaymentNumber() {
@@ -101,7 +103,13 @@ public class AmortizationTable {
 		public String toString()
 		{
 			//could use a StringBuilder here
-			return  paymentNumber+" "+(interest+principal)+" "+balance+" "+interest+" "+principal+" "+newBalance;
+			return  paymentNumber+" "+(payment)+" "+balance+" "+interest+" "+principal+" "+newBalance;
+		}
+		public double getPayment() {
+			return payment;
+		}
+		public void setPayment(double payment) {
+			this.payment = payment;
 		}
 	
 	}

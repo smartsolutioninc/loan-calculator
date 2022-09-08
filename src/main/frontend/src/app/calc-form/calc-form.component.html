@@ -2,16 +2,18 @@
 
 	<h2>input form component</h2>
 
-	<em>Tip: Create and call an Angular service to submit the values to the server. Pass as many parameters/fields as
-		required by the algorithm (refer to the Rule of 78 in the PDF document)</em>
+	<em>Enter Loan Details:</em>
 
-	<form>
-		<input type="text" />
-		<input type="text" />
-		<input type="text" />
-		<input type="text" />
+	<form *ngIf="form" [formGroup]="form" (ngSubmit)="calculateAmortization()">
+		<label>Term:</label>
+		<input type="text" formControlName="term"/>
+		<label>Interest Rate:</label>
+		<input type="text"  formControlName="interestRate"/>
+		<label>Loan Amount:</label>
+		<input type="text"  formControlName="loanAmount"/>
+		<button (click)="calculateAmortization()">Calculate</button>
 	</form>
 
-	<button>Calculate</button>
+
 
 </div>
