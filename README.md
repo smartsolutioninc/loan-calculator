@@ -1,5 +1,7 @@
 # Loan Calculator (test assignment)
 
+
+
 As part of a test assignment we would like you to fork this project and 
 enhance it based on the requirements below. Once the assignment is completed,
 push your changes to GitHub and send us a pull request. We will review it and
