@@ -1,9 +1,10 @@
 # Loan Calculator (test assignment)
 
-As part of a test assignment we would like you to fork this project and 
+As part of a test assignment we would like you to clone this project and 
 enhance it based on the requirements below. Once the assignment is completed,
-push your changes to GitHub and send us a pull request. We will review it and
-will arrange another interview to go over your code changes.
+send us a single patch file for review (see instructions in the "To create a patch" 
+section below). Once we review the changes we will arrange another interview to go 
+over and discuss your implementation.
 
 1. Implement the Rule of 78 algorithm on the backend and provide a RESTful 
    end-point that returns the result to the front-end. The suggested 
@@ -31,12 +32,24 @@ the existing code. Both front-end and back-end code should be easy to read
 by other developers, while the UI layout and data presentation is user-friendly.
 Any improvements to the project are welcome. 
 
+To clone the project to your local environment:
+
+1. `git clone git@github.com:smartsolutioninc/loan-calculator.git`
+
 To build the project, run:
 
 1. `mvn package`
 2. `java -jar target/loan-calc-0.0.1-SNAPSHOT.jar`
 3. Go to http://localhost:8080 in the browser
 
+To create a patch:
+
+1. Create and switch to your own branch: `git checkout -b my-implementation`
+2. Make and commit your changes (multiple commits are OK)
+3. Create a patch file: `git format-patch origin/master --stdout > ../my-implementation.patch`
+4. Email us the my-implementation.patch file
+
 
 Thanks,
-Smart Solution dev team 
+Smart Solution dev team
+
