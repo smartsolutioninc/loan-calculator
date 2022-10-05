@@ -14,7 +14,7 @@
 	<name>loan-calc</name>
 	<description>Test Assignment Project for a developer</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>8</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -48,13 +48,13 @@
 				<version>1.6</version> <!-- LATEST_VERSION -->
 				
 				<executions>
-					<execution>
-						<!-- optional: you don't really need execution ids, but it looks nice in your build log. -->
+				<!-- 	<execution>
+						optional: you don't really need execution ids, but it looks nice in your build log.
 						<id>install node and npm</id>
 						<goals>
 							<goal>install-node-and-npm</goal>
 						</goals>
-						<!-- optional: default phase is "generate-resources" -->
+						optional: default phase is "generate-resources"
 						<phase>generate-resources</phase>
 					</execution>
 					<execution>
@@ -62,10 +62,10 @@
 						<goals>
 							<goal>npm</goal>
 						</goals>
-						<!-- optional: default phase is "generate-resources" -->
+						optional: default phase is "generate-resources"
 						<phase>generate-resources</phase>
 						<configuration>
-							<!-- optional: The default argument is "install" -->
+							optional: The default argument is "install"
 							<arguments>install</arguments>
 						</configuration>
 					</execution>
@@ -78,7 +78,7 @@
 						<configuration>
 							<arguments>run build</arguments>
 						</configuration>
-					</execution>
+					</execution> -->
 				</executions>
 				<configuration>
 					<nodeVersion>v16.14.0</nodeVersion>
